@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--primary);
+  font: var(--body-p1-bold);
+  color: var(--white);
+  border: 0px;
+  padding: 13px 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}

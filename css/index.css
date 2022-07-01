@@ -1,0 +1,23 @@
+@import url(./variables.css);
+@import url(/header.css);
+@import url(/button.css);
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrape {
+  max-width: 72.37rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: var(--green-ligth);
+
+  font: var(--body-p1-regula);
+  color: var(--grey);
+}
