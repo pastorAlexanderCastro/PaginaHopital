@@ -1,6 +1,6 @@
 @import url(./variables.css);
-@import url(/header.css);
-@import url(/button.css);
+@import url(/css/header.css);
+@import url(/css/button.css);
 * {
   box-sizing: border-box;
   list-style: none;
