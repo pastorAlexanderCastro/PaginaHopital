@@ -32,12 +32,12 @@
   gap: 50px;
 }
 
-@media screen and (max-width: 838px) {
+@media screen and (max-width: 932px) {
   .header__menu {
     gap: 15px;
   }
 }
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 822px) {
   .header__btn {
     display: block;
     cursor: pointer;
