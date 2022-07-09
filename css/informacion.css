@@ -1,0 +1,101 @@
+.info {
+  height: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font: var(--body-p1-regular);
+  gap: 15px;
+}
+.info__container {
+  order: 2;
+
+  width: 280px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: url(/assets/img/twoDoctor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--primary);
+  border-radius: 10px 10px 200px 200px;
+  -moz-border-radius: 10px 10px 200px 200px;
+  -webkit-border-radius: 10px 10px 200px 200px;
+  border: 6px solid #fff;
+}
+/* .info__img {
+  order: 1;
+  width: 300px;
+  height: 300px;
+} */
+.info__contenido {
+  order: 1;
+}
+.info__titulo {
+  font: var(--h4);
+  color: var(--blue-dark);
+}
+.info__parrafo {
+  font: var(--body-p3-regular);
+}
+.info__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px;
+}
+
+.info__link {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  font: var(--body-p3-regular);
+  /* justify-content: center; */
+}
+.info__link img {
+  margin-right: 10px;
+  background-color: var(--white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--primary);
+}
+/* position */
+/* box-model */
+/* text */
+/* visuales */
+/* otros */
+
+@media screen and (min-width: 600px) {
+  /* .info {
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+  } */
+  .info__titulo {
+    font: var(--h3);
+  }
+  .info__contenido {
+    width: 50%;
+  }
+  .info__parrafo {
+    font: var(--body-p1-regular);
+  }
+
+  .info__link {
+    font: var(--body-p1-regular);
+  }
+  .info__container {
+    width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .info {
+    flex-direction: row;
+    align-items: center;
+  }
+}

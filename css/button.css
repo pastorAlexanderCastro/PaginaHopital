@@ -11,5 +11,5 @@
   -o-border-radius: 4px;
 }
 .button--hero {
-  width: 100%;
+  min-width: 340px;
 }

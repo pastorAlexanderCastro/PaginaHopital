@@ -1,6 +1,14 @@
 .hero {
   width: 100%;
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.hero__container {
+  margin-bottom: 15px;
 }
 .hero__titulo {
   font: var(--h3);
@@ -15,7 +23,7 @@
   border: 6px solid var(--white);
   border-radius: 150px 150px 50px 50px / 170px 170px 0px 0px;
   height: 300px;
-  width: 250px;
+  width: 300px;
   text-align: center;
   background-image: url(/assets/img/usman-yousaf-pTrhfmj2jDA-unsplash-removebg-preview.png);
   background-repeat: no-repeat;
@@ -25,6 +33,74 @@
   background-size: cover;
 }
 
-.hero__picture {
-  text-align: center;
+.hero__icono {
+  width: 40px;
+  height: 40px;
+  background-color: var(--greey-ligth);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.hero__icono--x {
+  position: relative;
+  top: 0px;
+  left: 155px;
+}
+.hero__icono--drug {
+  position: relative;
+  top: 190px;
+  left: 155px;
+}
+.hero__icono--disability {
+  position: relative;
+  top: 190px;
+  right: 200px;
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+  }
+  .hero__container {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .hero__titulo {
+    font: var(--h1);
+  }
+  .hero__img {
+    width: 400px;
+    height: 400px;
+    margin-top: 42px;
+    border: 10px solid var(--white);
+  }
+  .hero__containerImg {
+    height: 435px;
+  }
+  .hero__icono {
+    width: 70px;
+    height: 70px;
+  }
+  .hero__icono--x {
+    position: relative;
+    top: -50px;
+    left: 220px;
+  }
+  .hero__icono--drug {
+    position: relative;
+    top: 270px;
+    left: 220px;
+  }
+  .hero__icono--disability {
+    position: relative;
+    top: 270px;
+    right: 295px;
+  }
 }
