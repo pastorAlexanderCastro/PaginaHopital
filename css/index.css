@@ -3,6 +3,7 @@
 @import url(/css/button.css);
 @import url(/css/hero.css);
 @import url(/css/informacion.css);
+@import url(/css/opiniones.css);
 * {
   box-sizing: border-box;
   list-style: none;
@@ -19,6 +20,7 @@
 
 body {
   background-color: var(--greey-ligth);
+  overflow-x: hidden;
 
   font: var(--body-p1-regula);
   color: var(--grey);

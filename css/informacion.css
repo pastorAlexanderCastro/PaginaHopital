@@ -1,5 +1,5 @@
 .info {
-  height: 950px;
+  height: 850px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,8 +7,6 @@
   gap: 15px;
 }
 .info__container {
-  order: 2;
-
   width: 280px;
   height: 300px;
   margin-right: auto;
@@ -24,14 +22,31 @@
   -webkit-border-radius: 10px 10px 200px 200px;
   border: 6px solid #fff;
 }
-/* .info__img {
-  order: 1;
+.info__container--order {
+  position: relative;
+  order: 4;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70vh;
+  height: 240px;
+  margin-top: 70px;
+  /* height: 50%; */
+  background-color: var(--primary);
+  border-radius: 200px 0px 0px 200px;
+  -moz-border-radius: 200px 0px 0px 200px;
+  -webkit-border-radius: 200px 0px 0px 200px;
+}
+
+.info__img--order {
+  position: relative;
+  bottom: 80px;
+  right: 35px;
+}
+.info__img {
   width: 300px;
   height: 300px;
-} */
-.info__contenido {
-  order: 1;
 }
+
 .info__titulo {
   font: var(--h4);
   color: var(--blue-dark);
@@ -51,6 +66,7 @@
   align-items: center;
   margin-right: 10px;
   font: var(--body-p3-regular);
+  color: var(--blue-dark);
   /* justify-content: center; */
 }
 .info__link img {
@@ -62,6 +78,22 @@
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 2px 2px 2px var(--primary);
+}
+.info__link--borderNone {
+  margin-bottom: 25px;
+}
+.info__link--borderNone img {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  background-color: transparent;
+  box-shadow: none;
+
+  justify-content: center;
+  text-align: center;
+  display: block;
 }
 /* position */
 /* box-model */
@@ -88,14 +120,36 @@
   .info__link {
     font: var(--body-p1-regular);
   }
-  .info__container {
-    width: 400px;
-    height: 350px;
-  }
 }
 @media screen and (min-width: 800px) {
   .info {
     flex-direction: row;
     align-items: center;
+    height: 100vh;
+  }
+  .info__container {
+    width: 400px;
+    height: 350px;
+    order: 1;
+    margin-top: 35px;
+  }
+  .info__contenido {
+    order: 2;
+  }
+  .info__contenido--order {
+    order: 100;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .info__container--order {
+    position: absolute;
+    left: 743px;
+    height: 60%;
+    width: 600px;
+  }
+  .info__img--order img {
+    width: 693px;
+    position: relative;
+    left: 82px;
   }
 }
