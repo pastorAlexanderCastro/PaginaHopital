@@ -4,9 +4,9 @@
   height: 120px;
   display: flex;
   flex-direction: row;
-  /* position: sticky;
-  top: 0px; */
-  z-index: 2;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
   color: var(--grey);
 
   font: inherit;

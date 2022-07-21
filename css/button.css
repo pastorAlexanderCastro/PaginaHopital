@@ -13,3 +13,8 @@
 .button--hero {
   min-width: 340px;
 }
+
+.button--covid {
+  background-color: var(--white);
+  color: var(--blue-dark);
+}

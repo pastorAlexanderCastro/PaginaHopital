@@ -4,6 +4,8 @@
 @import url(/css/hero.css);
 @import url(/css/informacion.css);
 @import url(/css/opiniones.css);
+@import url(/css/sectionCovid.css);
+@import url(/css/footer.css);
 * {
   box-sizing: border-box;
   list-style: none;
